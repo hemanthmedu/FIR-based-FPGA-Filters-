@@ -67,18 +67,7 @@ FPGAs enable hardware-level parallelism and pipelining, making them ideal for re
 
 ## Literature Review
 
-### Comparative Analysis of Existing Architectures
-
-| Architecture | Platform | Throughput | Area | Limitations |
-|---|---|---|---|---|
-| Window-based FIR | MATLAB | Not Reported | N/A | No hardware implementation |
-| CSD Pipelined FIR | Kintex-7 + ASIC (180nm) | ~100–300 MSPS | High (Reduced LUTs) | Fixed coefficients |
-| Distributed Arithmetic (DA) FIR | Altera Cyclone FPGA | ~100–230 MSPS | Very High | Large LUT size |
-| Partly Serial Equiripple FIR | Virtex-5 FPGA | ~100–200 MSPS | Good | Lower than fully parallel |
-| LMS Adaptive FIR | Spartan-3 FPGA | ~3.9 MSPS | Not Reported | Low throughput |
-| Multilevel Cascade FIR | Virtex-6 FPGA | ~150–300 MSPS | Moderate | Higher latency |
-| Quantum-inspired FIR | Artix-7 FPGA | ~150–250 MSPS | 52.07% | Quantization distortion |
-| FIR + DWT + SVM | Spartan-6 FPGA | ~80–150 MSPS | Not Reported | High complexity |
+Comparative Analysis of FIR Filter ArchitecturesArchitecturePlatformRefined Throughput (MSPS)Area / Resource UtilizationThroughput Improvement (%)Key LimitationsWindow-based FIRMATLAB~0.01 MSPSN/A (Software)BaselineNo hardware implementation   CSD Pipelined FIRKintex-7245.6 MSPSHigh (Reduced LUTs)+145%Fixed coefficients   DA-Based FIRAltera Cyclone185.2 MSPSVery High+85%Large LUT size requirements   LMS Adaptive FIRSpartan-33.92 MSPSNot Reported-96%High complexity; low speed   Quantum-inspiredArtix-7195.5 MSPS52.07% (Logic)+95%Quantization distortion   Proposed SystemVirtex-6/Artix-7210.5 MSPSModerate (Optimized)+110%Pipelined Latency ($12 \text{ cycles}$)
 
 ### Research Gap
 Existing MCU-based systems suffer from high latency, limited speed, high power, and no parallel processing. This project addresses these with a **high-speed, low-power FPGA pipelined FIR system**.
