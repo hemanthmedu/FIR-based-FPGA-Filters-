@@ -336,6 +336,10 @@ rst ─────────────────────────�
 | Signal Clarity | Accurate cardiac feature preservation |
 | Reliability | Stable continuous processing with synchronization |
 
+Overall Formula
+<img width="784" height="1168" alt="IMG-20260512-WA0000" src="https://github.com/user-attachments/assets/8b8353aa-1b7b-4fdb-9ea4-5a2fdc523bd3" />
+
+
 **Application Scope:**
 - Wearable ECG monitoring devices
 - Remote health monitoring systems
