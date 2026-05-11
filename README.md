@@ -337,7 +337,8 @@ rst ─────────────────────────�
 | Reliability | Stable continuous processing with synchronization |
 
 Overall Formula
-<img width="784" height="1168" alt="IMG-20260512-WA0000" src="https://github.com/user-attachments/assets/8b8353aa-1b7b-4fdb-9ea4-5a2fdc523bd3" />
+<img width="784" height="605" alt="IMG-20260512-WA0000 (1)" src="https://github.com/user-attachments/assets/5ebc0e1f-d198-484b-84ea-859383157984" />
+
 
 
 **Application Scope:**
