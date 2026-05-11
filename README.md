@@ -131,6 +131,7 @@ Digital ECG  ──► Input  │    ┌─────┐ │  ┌────�
                         │    └──────────────────────────────┘     │
                         └─────────────────────────────────────────┘
 ```
+<img width="536" height="319" alt="Screenshot 2026-05-11 223034" src="https://github.com/user-attachments/assets/c1327725-09b4-41d9-8e06-b1541a16b273" />
 
 ---
 
@@ -472,7 +473,6 @@ en=1; d=1; #10;             // updates when en=1
 [4] R. Rasu et al., "FPGA Based Non-Invasive Heart Rate Monitoring System for Detecting Abnormalities in Fetal," *SPACES 2015*, pp. 375–379.
 
 [5] L. Nian-qiang et al., "Application of Distributed FIR Filter Based on FPGA in the Analyzing of ECG Signal," *ISDEA 2010*, pp. 335–338, doi: 10.1109/ISDEA.2010.265.
-<img width="754" height="779" alt="Screenshot 2026-02-08 232346" src="https://github.com/user-attachments/assets/44815fa9-5ffc-42eb-89c7-14183a22fef5" />
 
 [6] B. Singh, R. Mehra, and Chandni, "Reconfigurable FIR Filter for Denoising of ECG Signal," *IEEE NITTTR 2016*.
 
