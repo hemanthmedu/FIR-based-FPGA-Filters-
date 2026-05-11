@@ -18,12 +18,9 @@
 2. [Problem Statement](#problem-statement)
 3. [Objectives](#objectives)
 4. [Literature Review](#literature-review)
-5. [Proposed System Design](#proposed-system-design)
-6. [Leaf Cell Design](#leaf-cell-design)
-7. [Simulations & Waveforms](#simulations--waveforms)
-8. [Results](#results)
-9. [Tools Used](#tools-used)
-10. [References](#references)
+5. [Results](#results)
+6. [Tools Used](#tools-used)
+7. [References](#references)
 
 ---
 
