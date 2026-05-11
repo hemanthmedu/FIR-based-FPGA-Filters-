@@ -64,6 +64,8 @@ FPGAs enable hardware-level parallelism and pipelining, making them ideal for re
 - Provide scalable and reconfigurable architecture
 
 ---
+Comparative Analysis Table
+<img width="470" height="143" alt="Screenshot 2026-05-12 024144" src="https://github.com/user-attachments/assets/cb009c82-a272-4763-8b0f-58feda1a74ad" />
 
 ### Research Gap
 Existing MCU-based systems suffer from high latency, limited speed, high power, and no parallel processing. This project addresses these with a **high-speed, low-power FPGA pipelined FIR system**.
