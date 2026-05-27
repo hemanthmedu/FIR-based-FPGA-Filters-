@@ -1,13 +1,17 @@
-module shift_reg_12bit (input clk,input en,input rst,input din,output dout);
-reg [11:0] shift;
+module delay_reg_12bit(
+    input clk,
+    input rst,
+    input en,
+    input signed [11:0] din,
+    output reg signed [11:0] dout
+);
 
-always @(posedge clk or posedge rst) begin
-    if (rst)
-        shift <= 12'b0;
-    else if (en)
-        shift <= {shift[10:0], din};  // shift when enabled
+always @(posedge clk) begin
+    if(rst)
+        dout <= 12'd0;
+
+    else if(en)
+        dout <= din;
 end
-
-assign dout = shift[11];
 
 endmodule
