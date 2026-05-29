@@ -1,5 +1,14 @@
-module mux_2(input a,input b,input sel,output y);
+module mux_2_12bit(
 
-  assign y = (sel) ? b : a;
+    input signed [11:0] a,
+    input signed [11:0] b,
+
+    input sel,
+
+    output signed [11:0] y
+
+);
+
+assign y = (sel) ? b : a;
 
 endmodule
