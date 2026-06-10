@@ -1,17 +1,35 @@
-module mux_2_tb;
-reg a, b, sel;
-wire y;
-mux_2 uut (.a(a), .b(b), .sel(sel), .y(y));
-initial 
-begin
-    $monitor("sel=%b a=%b b=%b y=%b", sel, a, b, y);
+module mux_2_12bit_tb;
 
-    a=0; b=1; sel=0;
-     #10;
-    a=1; b=0; sel=1;
-     #10;
+reg signed [11:0] a,b;
+reg sel;
 
-    $finish;
+wire signed [11:0] y;
+
+mux_2_12bit DUT(
+    .a(a),
+    .b(b),
+    .sel(sel),
+    .y(y)
+);
+
+initial begin
+    a=12'sd20;
+    b=12'sd50;
+
+    sel=0;
+    #10;
+
+    sel=1;
+    #10;
+
+    a=-12'sd15;
+    b=12'sd10;
+
+    sel=0;
+    #10;
+
+    sel=1;
+    #10 $finish;
 end
 
 endmodule
