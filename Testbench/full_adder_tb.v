@@ -1,22 +1,25 @@
 module full_adder_tb;
-reg A, B, Cin;
-wire Sum, Cout;
 
-full_adder uut(A, B, Cin, Sum, Cout);
-initial 
-begin
-    $monitor("A=%b B=%b Cin=%b | Sum=%b Cout=%b", A, B, Cin, Sum, Cout);
+reg A,B,Cin;
+wire Sum,Cout;
 
-    A=0; B=0; Cin=0; #10;
-    A=0; B=0; Cin=1; #10;
-    A=0; B=1; Cin=0; #10;
-    A=0; B=1; Cin=1; #10;
-    A=1; B=0; Cin=0; #10;
-    A=1; B=0; Cin=1; #10;
-    A=1; B=1; Cin=0; #10;
-    A=1; B=1; Cin=1; #10;
+full_adder DUT(
+    .A(A),
+    .B(B),
+    .Cin(Cin),
+    .Sum(Sum),
+    .Cout(Cout)
+);
 
-    $finish;
+initial begin
+    {A,B,Cin}=3'b000;
+
+    repeat(8)
+    begin
+        #10 {A,B,Cin}={A,B,Cin}+1;
+    end
+
+    #10 $finish;
 end
 
 endmodule
