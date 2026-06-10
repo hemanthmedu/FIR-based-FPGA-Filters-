@@ -1,24 +1,34 @@
-module shifter_tb();
+module shifter_tb;
 
-reg [7:0] a;
+reg signed [27:0] a;
 reg sel;
-wire [7:0] y;
 
-shifter uut (.a(a),.sel(sel),.y(y));
+wire signed [27:0] y;
 
-initial 
-  begin
+shifter DUT(
+    .a(a),
+    .sel(sel),
+    .y(y)
+);
 
-    a = 8'b00000101;
+initial begin
+    a=28'sd100;
 
-    sel = 0;   
-    #10;
+    sel=0;
+    #20;
 
-    sel = 1;  
-    #10;
+    sel=1;
+    #20;
+
+    a=-28'sd50;
+
+    sel=0;
+    #20;
+
+    sel=1;
+    #20;
 
     $finish;
-
 end
 
 endmodule
