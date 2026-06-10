@@ -1,19 +1,20 @@
-module coeff_rom_tb();
+module coeff_rom_tb;
 
 reg [2:0] addr;
-wire [11:0] data;
+wire signed [11:0] coeff;
 
-coeff_rom uut (.addr(addr), .data(data));
-
-integer i;
+coeff_rom DUT(
+    .addr(addr),
+    .coeff(coeff)
+);
 
 initial begin
-    $monitor("addr=%b data=%d", addr, data);
-    for(i=0; i<8; i=i+1) begin
-        addr = i; 
-        #10;
+    addr=0;
+    repeat(8)
+    begin
+        #10 addr=addr+1;
     end
-    $finish;
+    #10 $finish;
 end
 
 endmodule
