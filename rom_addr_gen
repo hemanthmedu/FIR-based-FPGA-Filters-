@@ -1,0 +1,33 @@
+`timescale 1ns/1ps
+
+module rom_addr_gen_tb;
+
+reg clk;
+reg rst;
+
+wire [2:0] addr;
+
+rom_addr_gen DUT(
+    .clk(clk),
+    .rst(rst),
+    .addr(addr)
+);
+
+always #5 clk = ~clk;
+
+initial
+begin
+
+    clk = 0;
+    rst = 1;
+
+    #20;
+    rst = 0;
+
+    #100;
+
+    $finish;
+
+end
+
+endmodule
