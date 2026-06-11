@@ -1,27 +1,23 @@
 module coeff_rom(
-    input [2:0] addr,
-    output reg signed [11:0] coeff
+
+    output signed [11:0] coeff0,
+    output signed [11:0] coeff1,
+    output signed [11:0] coeff2,
+    output signed [11:0] coeff3,
+    output signed [11:0] coeff4,
+    output signed [11:0] coeff5,
+    output signed [11:0] coeff6,
+    output signed [11:0] coeff7
+
 );
 
-always @(*) begin
-
-    case(addr)
-
-        3'd0: coeff = 12'sd10;
-        3'd1: coeff = 12'sd20;
-        3'd2: coeff = 12'sd30;
-        3'd3: coeff = 12'sd40;
-
-        3'd4: coeff = 12'sd50;
-
-        3'd5: coeff = 12'sd40;
-        3'd6: coeff = 12'sd30;
-        3'd7: coeff = 12'sd20;
-
-        default: coeff = 12'sd0;
-
-    endcase
-
-end
+assign coeff0 = 12'sd10;
+assign coeff1 = 12'sd20;
+assign coeff2 = 12'sd30;
+assign coeff3 = 12'sd40;
+assign coeff4 = 12'sd50;
+assign coeff5 = 12'sd40;
+assign coeff6 = 12'sd30;
+assign coeff7 = 12'sd20;
 
 endmodule
