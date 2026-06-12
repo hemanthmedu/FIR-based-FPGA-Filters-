@@ -11,13 +11,13 @@ module coeff_rom(
 
 );
 
-assign coeff0 = 12'sd10;
-assign coeff1 = 12'sd20;
-assign coeff2 = 12'sd30;
-assign coeff3 = 12'sd40;
-assign coeff4 = 12'sd50;
-assign coeff5 = 12'sd40;
-assign coeff6 = 12'sd30;
-assign coeff7 = 12'sd20;
+assign coeff0 = 12'sd13;
+assign coeff1 = 12'sd90;
+assign coeff2 = 12'sd334;
+assign coeff3 = 12'sd587;
+assign coeff4 = 12'sd587;
+assign coeff5 = 12'sd334;
+assign coeff6 = 12'sd90;
+assign coeff7 = 12'sd13;
 
 endmodule
