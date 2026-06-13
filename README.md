@@ -247,19 +247,6 @@ A, B, Cin ──► [XOR + AND + OR tree] ──► Sum, Cout
 ```
 - `Sum = A XOR B XOR Cin`
 - `Cout = 1` when at least 2 inputs are 1
-
-#### Booth Encoder
-```
-x0, x1 ──► [RTL_MUX: S=2'b00/01/10/11] ──► y[1:0]
-```
-- Checks 2 multiplier bits at a time
-- Decides: add / subtract / skip multiplicand
-- Reduces partial products → faster, more efficient
-- Especially useful for consecutive 1s in binary numbers
-
-#### Shifter
-- Moves bits left/right to align partial products before addition
-
 ---
 
 ### 4. Adder Tree (CSA / XOR-MUX)
