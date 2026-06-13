@@ -356,6 +356,12 @@ Overall Formula
 - Remote health monitoring systems
 - Real-time biomedical signal processing
 
+- Limitations
+Current implementation uses fixed coefficients.
+Filter performance depends on selected coefficients.
+Hardware testing on FPGA board is not included in the current simulation stage.
+Real-time ADC interface can be added in future work.
+
 ---
 
 ## Tools Used
