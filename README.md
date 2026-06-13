@@ -363,6 +363,13 @@ Hardware testing on FPGA board is not included in the current simulation stage.
 Real-time ADC interface can be added in future work.
 
 ---
+Future Scope
+
+Implement adaptive FIR filtering.
+Add real-time ECG sensor interface.
+Implement LPF, HPF, and Notch filter cascade.
+Optimize multiplier architecture using Booth/CSD techniques.
+Deploy on FPGA development board.
 
 ## Tools Used
 
