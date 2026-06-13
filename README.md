@@ -325,7 +325,14 @@ rst ─────────────────────────�
 - When `en=1` → FF updates normally on clock edge
 - `rst=1` → output cleared to 0 asynchronously
 
----
+---Input ECG Explanation:
+The ECG signal is obtained from a public ECG dataset.
+The analog ECG waveform is considered digitized using a 12-bit ADC.
+
+The digitized samples are provided to the FPGA FIR filter through
+the data_in[11:0] input port.
+
+During simulation, ECG samples are applied through the Verilog testbench.
 
 ## Results
 
