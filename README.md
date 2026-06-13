@@ -147,7 +147,23 @@ Digital ECG Input
 ```
 <img width="547" height="328" alt="Screenshot 2026-05-11 224656" src="https://github.com/user-attachments/assets/39bbf93e-7c9e-4a4b-9217-c8e0c1e89d76" />
 
----
+---Implementation Flow:
+  ECG Dataset
+     |
+     ↓
+MATLAB Preprocessing
+     |
+     ↓
+12-bit Digital Samples
+     |
+     ↓
+Vivado Simulation
+     |
+     ↓
+Verilog FIR Implementation
+     |
+     ↓
+Filtered ECG Output
 
 ## Leaf Cell Design
 
