@@ -1,4 +1,4 @@
-# FPGA Implementation of ECG Signals Using FIR Filter
+#FPGA-Based Real-Time FIR Filter Design for ECG Signal Processing
 
 **Course:** DDHDL Verilog (22ECE42) | **Semester:** 4th | **Institution:** St. Joseph Engineering College, Mangaluru
 
